@@ -1,37 +1,20 @@
-#
+# Copyright (c) 2020 Roku, Inc. All rights reserved.
 
-# Copyright (c) 2015 Roku, Inc. All rights reserved.
+# Channel Details
 
-# Roku Channel Manifest File
-
-# Full spec at bit.ly/roku-manifest-file
-
-#
-
-## Channel Details
-
-title=Whatsup dog
+title=Demo App
 major_version=1
 minor_version=0
-build_version=00001
+build_version=1
 
-## Channel Assets
+# Channel Assets
 
-### Main Menu Icons / Channel Poster Artwork
+mm_icon_focus_hd=pkg:/images/icon_focus_hd.png
 
-#### Image sizes are FHD: 540x405px | HD: 290x218px | SD: 214x144px
+# Splash Screen
 
-mm_icon_focus_fhd=pkg:/images/channel_poster_fhd.png
-mm_icon_focus_hd=pkg:/images/channel_poster_hd.png
-mm_icon_focus_sd=pkg:/images/channel_poster_sd.png
+splash_screen_hd=pkg:/images/splash.jpeg
 
-### Splash Screen + Loading Screen Artwork
+# Resolution
 
-#### Image sizes are FHD: 1920x1080px | HD: 1280x720px | SD: 720x480px
-
-splash_screen_fhd=pkg:/images/splash-screen_fhd.jpg
-splash_screen_hd=pkg:/images/splash-screen_hd.jpg
-splash_screen_sd=pkg:/images/splash-screen_sd.jpg
-
-splash_color=#000000
-splash_min_time=1
+ui_resolutions=hd
