@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MainScene" extends="Scene">
+ <!--main entry point to our channel's scene  -->
+  <script type="text/brightscript" uri="/MainScene.brs" />
+  
+  <!-- handles showing and closing screens -->
+  <script type="text/brightscript" uri="UILogic/ScreenStackLogic.brs" />
+
+  <!-- parses metadata in our content feed -->
+  <script type="text/brightscript" uri="UILogic/ContentTaskLogic.brs" />
+
+  <!-- manages grid screen (which displays all the content) -->
+  <script type="text/brightscript" uri="UILogic/GridScreenLogic.brs" />
+
+  <!-- Adding UI components to our channel's scene -->
+  <!-- these components are used on every page of our channel -->
+  <children>
+    <!-- Overhang with Roku Developers logo (aka information bar at the top) -->
+    <Overhang 
+      id="overhang"
+      showOptions="false"
+      showClock="false"
+      logoUri="pkg:/images/hd_overhang_logo.png"
+      translation="[0, 50]"
+    />
+    <!-- Loader -->
+    <Label
+      id="loadingIndicator"
+      text="Loading..."
+      width="1280"
+      height="720"
+      translation="[0, 0]"
+      horizAlign="center"
+      vertAlign="center"
+      visible="false"
+      font="font:MediumBoldSystemFont"
+    />
+  </children>
+</component>
